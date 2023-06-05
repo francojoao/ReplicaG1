@@ -8,112 +8,516 @@
   <link rel="stylesheet" href="out.css">
   <title>G1</title>
 </head>
-<body class="bg-gray-50 flex flex-col justify-center">
+<body class="bg-gray-50 flex flex-col justify-center tracking-tight">
 	<nav>
-		<div class="bg-gray-100 flex flex-row justify-between">		
-			<div class="flex flex-row">
-				<div class="p-3 border-t-8 hover:border-sky-600 text-sky-600">
+		<div class="bg-gray-100 flex flex-row justify-between font-bold border-inherit">	
+			<ul class="flex flex-row">
+				<li class="px-3 py-1 border-t-4 border-gray-100 hover:border-sky-600 text-sky-600">
 					<a href="#">globo.com</a>
-				</div>
-				<div class="p-3 border-t-8 hover:border-red-600 text-red-600">
+				</li>
+				<li class="px-3 py-1 border-t-4 border-gray-100 hover:border-red-700 text-red-800">
 					<a href="#">g1</a>
-				</div>
-				<div class="p-3 border-t-8 hover:border-green-600 text-green-600">
+				</li>
+				<li class="px-3 py-1 border-t-4 border-gray-100 hover:border-green-600 text-green-600">
 					<a href="#">ge</a>
-				</div>	
-				<div class="p-3 border-t-8 hover:border-orange-600 text-orange-600">
+				</li>	
+				<li class="px-3 py-1 border-t-4 border-gray-100 hover:border-orange-600 text-orange-600">
 					<a href="#">gshow</a>
-				</div>	
-				<div class="p-3 border-t-8 hover:border-red-600 text-red-600">
+				</li>	
+				<li class="px-3 py-1 border-t-4 border-gray-100 hover:border-red-500 text-red-800">
 					<a href="#">globoplay</a>
-				</div>	
-				<div class="p-3 border-t-8 hover:border-blue-900 text-blue-900">
+				</li>	
+				<li class="px-3 py-1 border-t-4 border-gray-100 hover:border-blue-900 text-blue-900">
 					<a href="#">o globo</a>
-				</div>	
-			</div>
+				</li>	
+			</ul>
 			<div class="flex flex-row">		
-				<div class="p-3">Assine já</div>
-				<div class="p-3">Entrar</div>
+				<button class="p-3">Assine já</button>
+				<button class="p-3">Entrar</button>
 			</div>
 		</div>
-		<div class="bg-red-700 flex flex-row">
-			<div class="p-3">Menu</div>
-			<div class="p-3">G1</div>
-			<div class="p-3">
-				<input placeholder="BUSCAR" class="bg-red-800" type="text">
+		<div class="bg-red-700 flex flex-row justify-between text-white">
+			<button class="p-3 uppercase" onclick="showMenu()">Menu</button>
+			<div class="hidden">
+				<ul>
+					<li>Princípios Editoriais</li>
+					<li>Princípios Editoriais</li>
+					<li>Princípios Editoriais</li>
+					<li>Princípios Editoriais</li>					
+				</ul>
 			</div>
+			<h1 class="p-3 font-bold text-white">g1</h1>			
+			<input placeholder="Buscar" class="m-3 p-1 bg-red-800 text-white rounded-lg shadow-inner" type="text">			
 		</div>
 	</nav>	
-	<main>
-		<!-- Parte principal -->
-		<div class="flex">
-			<div class="">
-				<span>Relatório da CGU</span>			
-				<h2>Auditoria aponta R$ 2 bi em auxílios irregulares a caminhoneiros e taxistas</h2>
-				<p>Pagamentos indevidos foram feitos no 2º semestre de 2022, quando Bolsonaro tentava reeleição.</p>
+	<main class="px-20 py-10">
+		<div class="flex mb-20">			
+			<div class="flex flex-col justify-between h-full p-5 mr-2 bg-white rounded-lg border">
+				<a href="">
+					<span><strong>Relatório da CGU</strong></span>			
+					<span><h2 class="text-red-700">Auditoria aponta R$ 2 bi em auxílios irregulares a caminhoneiros e taxistas</h2></span>						
+					<p>Pagamentos indevidos foram feitos no 2º semestre de 2022, quando Bolsonaro tentava reeleição.</p>																	
+				</a>
 			</div>
-			<div class="flex flex-col">
-				<div class="">
-					<span>Tragédia na Ásia</span>	
-					<h2>Trem descarrila na Índia e deixa 120 mortos</h2>
-				</div>
-				<div class="">
-					<span>Tragédia na Ásia</span>	
-					<h2>Mulher acha dente de mastodonte de 1 milhão de anos nos EUA</h2>
-				</div>
-			</div>
-		</div>	
-		<!-- Conteúdo abaixo -->
-		<div class="flex flex-col">
-			<!-- Coluna 1 -->
-			<div class="">
-				<!-- Cards -->
-				<div class="py-2">
-					<img alt="Foto: (TV Globo)" src="https://s2-g1.glbimg.com/oESO-KWpfLHXMLqAHhnHpY6pk9I=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/t/1/Hj3yQvTlC7w2MjkC05Ew/gnews-gn03-lula-sindicato-20230602-1437-frame-69739.jpeg">
-					<span><h5>Articulação do governo</h5></span>
-					<div>
-						<span><h4>'Aqui não tem marinheiro de 1ª viagem', diz Padilha após críticas</h4></span>									
-						<ul>
-							<li>VALDO: ministro diz que governo não fará 'lacração'</li>
-						</ul>
-					</div>					
-					<span>Há 51 minutos -- Em São Paulo</span>
+			<div class="flex flex-col h-full">
+				<div class="p-5 mb-1 bg-white flex flex-col justify-between h-1/2 rounded-lg">
+					<a>
+						<span>Tragédia na Ásia</span>	
+						<h2>Trem descarrila na Índia e deixa 120 mortos</h2>
+					</a>					
+				</div> 
+				<div class="p-5 mb-1 bg-white flex flex-col justify-between h-1/2 rounded-lg">
+					<span>Praia na Califórnia</span>	
+					<h2 class="">
+						Mulher acha dente de mastodonte de 1 milhão de anos nos EUA
+					</h2>
 				</div>	
-				<div class="py-2">
-					<img alt="Foto: (TV Globo)" src="https://s2-g1.glbimg.com/E6k7HB6L4nFK7ozY68C160GOqpg=/0x0:4200x2800/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/i/E/JR7LZARe26ujskntxiWg/fta20230602039.jpg">
-					<!-- <span><h5>Articulação do governo</h5></span> -->
-					<div>
-						<span><h4>Lula defende negociações: 'Tem que falar com quem não gosta da gente'</h4></span>									
-						<ul>
-							<li>Governo x Câmara: 7 pontos que explicam a crise</li>
-							<li>3 medidas enviadas por Lula foram ignoradas e perderão validade</li>
-						</ul>
-					</div>					
-					<span>Há 3 horas -- Em Política</span>
-				</div>		
-				<div class="py-2">
-					<video>
-						<source alt="Foto: (TV Globo)" src="https://g1.globo.com/mg/minas-gerais/mg2/video/zema-diz-que-no-sudeste-e-no-sul-ha-uma-proporcao-muito-maior-de-pessoas-trabalhando-do-que-vivendo-de-auxilio-emergencial-11669414.ghtml">
-					</video>
-					<img >
-					<span><h5>Minas Gerais</h5></span>
-					<div>	
-						<span><h4>Zema diz que, 'diferente da maioria', Sudeste e Sul têm menos gente vivendo de auxílio</h4></span>									
-						<ul>
-							<li>Governador de MG afirma que nas regiões 'há uma proporção muito maior' de trabalhadores.</li>
-						</ul>
-					</div>					
-					<span>Há 47 minutos -- Em Minas Gerais</span>
-				</div>		
 			</div>
+		</div>
+		<!-- Conteúdo abaixo -->
+		<div class="grid grid-cols-3 gap-5">
+			<!-- Coluna 1: Notícias em destaque -->
+			<div class="col-span-2 flex flex-col gap-10">
+				<!-- Cards -->
+				<div class="flex pb-10 gap-5 border-b border-gray-300">					
+					<img alt="Foto: (TV Globo)" src="https://s2-g1.glbimg.com/oESO-KWpfLHXMLqAHhnHpY6pk9I=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/t/1/Hj3yQvTlC7w2MjkC05Ew/gnews-gn03-lula-sindicato-20230602-1437-frame-69739.jpeg" class="w-1/2 h-full rounded-lg">	
+					<div class="flex flex-col gap-3">
+						<h5>Articulação do governo</h5>
+						<a href="">
+							<h2 class="text-red-800 hover:text-red-800">'Aqui não tem marinheiro de 1ª viagem', diz Padilha após críticas</h2>
+						</a>									
+						<ul>
+							<li class="text-md">
+								<a href="">VALDO: ministro diz que governo não fará 'lacração'</a>
+							</li>
+						</ul>										
+						<p class="text-sm">Há 51 minutos -- Em São Paulo</p>
+					</div>
+				</div>	
+				<div class="flex pb-10 gap-5 border-b border-gray-300">					
+					<img alt="Foto: (TV Globo)" src="https://s2-g1.glbimg.com/oESO-KWpfLHXMLqAHhnHpY6pk9I=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/t/1/Hj3yQvTlC7w2MjkC05Ew/gnews-gn03-lula-sindicato-20230602-1437-frame-69739.jpeg" class="w-1/2 h-full rounded-lg">	
+					<div class="flex flex-col gap-3">
+						<h5>Articulação do governo</h5>
+						<a href="">
+							<h2 class="text-red-800 hover:text-red-800">'Aqui não tem marinheiro de 1ª viagem', diz Padilha após críticas</h2>
+						</a>									
+						<ul>
+							<li class="text-md">
+								<a href="">VALDO: ministro diz que governo não fará 'lacração'</a>
+							</li>
+						</ul>										
+						<p class="text-sm">Há 51 minutos -- Em São Paulo</p>
+					</div>
+				</div>		
+				<div class="flex pb-10 gap-5 border-b border-gray-300">					
+					<img alt="Foto: (TV Globo)" src="https://s2-g1.glbimg.com/oESO-KWpfLHXMLqAHhnHpY6pk9I=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/t/1/Hj3yQvTlC7w2MjkC05Ew/gnews-gn03-lula-sindicato-20230602-1437-frame-69739.jpeg" class="w-1/2 h-full rounded-lg">	
+					<div class="flex flex-col gap-3">
+						<h5>Articulação do governo</h5>
+						<a href="">
+							<h2 class="text-red-800 hover:text-red-800">'Aqui não tem marinheiro de 1ª viagem', diz Padilha após críticas</h2>
+						</a>									
+						<ul>
+							<li class="text-md">
+								<a href="">VALDO: ministro diz que governo não fará 'lacração'</a>
+							</li>
+						</ul>										
+						<p class="text-sm">Há 51 minutos -- Em São Paulo</p>
+					</div>
+				</div>		
+				<div class="flex pb-10 gap-5 border-b border-gray-300">					
+					<img alt="Foto: (TV Globo)" src="https://s2-g1.glbimg.com/oESO-KWpfLHXMLqAHhnHpY6pk9I=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/t/1/Hj3yQvTlC7w2MjkC05Ew/gnews-gn03-lula-sindicato-20230602-1437-frame-69739.jpeg" class="w-1/2 h-full rounded-lg">	
+					<div class="flex flex-col gap-3">
+						<h5>Articulação do governo</h5>
+						<a href="">
+							<h2 class="text-red-800 hover:text-red-800">'Aqui não tem marinheiro de 1ª viagem', diz Padilha após críticas</h2>
+						</a>									
+						<ul>
+							<li class="text-md">
+								<a href="">VALDO: ministro diz que governo não fará 'lacração'</a>
+							</li>
+						</ul>										
+						<p class="text-sm">Há 51 minutos -- Em São Paulo</p>
+					</div>
+				</div>	
+				<div class="flex pb-10 gap-5 border-b border-gray-300">					
+					<img alt="Foto: (TV Globo)" src="https://s2-g1.glbimg.com/oESO-KWpfLHXMLqAHhnHpY6pk9I=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/t/1/Hj3yQvTlC7w2MjkC05Ew/gnews-gn03-lula-sindicato-20230602-1437-frame-69739.jpeg" class="w-1/2 h-full rounded-lg">	
+					<div class="flex flex-col gap-3">
+						<h5>Articulação do governo</h5>
+						<a href="">
+							<h2 class="text-red-800 hover:text-red-800">'Aqui não tem marinheiro de 1ª viagem', diz Padilha após críticas</h2>
+						</a>									
+						<ul>
+							<li class="text-md">
+								<a href="">VALDO: ministro diz que governo não fará 'lacração'</a>
+							</li>
+						</ul>										
+						<p class="text-sm">Há 51 minutos -- Em São Paulo</p>
+					</div>
+				</div>		
+				<div class="flex pb-10 gap-5 border-b border-gray-300">					
+					<img alt="Foto: (TV Globo)" src="https://s2-g1.glbimg.com/oESO-KWpfLHXMLqAHhnHpY6pk9I=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/t/1/Hj3yQvTlC7w2MjkC05Ew/gnews-gn03-lula-sindicato-20230602-1437-frame-69739.jpeg" class="w-1/2 h-full rounded-lg">	
+					<div class="flex flex-col gap-3">
+						<h5>Articulação do governo</h5>
+						<a href="">
+							<h2 class="text-red-800 hover:text-red-800">'Aqui não tem marinheiro de 1ª viagem', diz Padilha após críticas</h2>
+						</a>									
+						<ul>
+							<li class="text-md">
+								<a href="">VALDO: ministro diz que governo não fará 'lacração'</a>
+							</li>
+						</ul>										
+						<p class="text-sm">Há 51 minutos -- Em São Paulo</p>
+					</div>
+				</div>		
+				<div class="flex pb-10 gap-5 border-b border-gray-300">					
+					<img alt="Foto: (TV Globo)" src="https://s2-g1.glbimg.com/oESO-KWpfLHXMLqAHhnHpY6pk9I=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/t/1/Hj3yQvTlC7w2MjkC05Ew/gnews-gn03-lula-sindicato-20230602-1437-frame-69739.jpeg" class="w-1/2 h-full rounded-lg">	
+					<div class="flex flex-col gap-3">
+						<h5>Articulação do governo</h5>
+						<a href="">
+							<h2 class="text-red-800 hover:text-red-800">'Aqui não tem marinheiro de 1ª viagem', diz Padilha após críticas</h2>
+						</a>									
+						<ul>
+							<li class="text-md">
+								<a href="">VALDO: ministro diz que governo não fará 'lacração'</a>
+							</li>
+						</ul>										
+						<p class="text-sm">Há 51 minutos -- Em São Paulo</p>
+					</div>
+				</div>	
+				<div class="flex pb-10 gap-5 border-b border-gray-300">					
+					<img alt="Foto: (TV Globo)" src="https://s2-g1.glbimg.com/oESO-KWpfLHXMLqAHhnHpY6pk9I=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/t/1/Hj3yQvTlC7w2MjkC05Ew/gnews-gn03-lula-sindicato-20230602-1437-frame-69739.jpeg" class="w-1/2 h-full rounded-lg">	
+					<div class="flex flex-col gap-3">
+						<h5>Articulação do governo</h5>
+						<a href="">
+							<h2 class="text-red-800 hover:text-red-800">'Aqui não tem marinheiro de 1ª viagem', diz Padilha após críticas</h2>
+						</a>									
+						<ul>
+							<li class="text-md">
+								<a href="">VALDO: ministro diz que governo não fará 'lacração'</a>
+							</li>
+						</ul>										
+						<p class="text-sm">Há 51 minutos -- Em São Paulo</p>
+					</div>
+				</div>		
+				<div class="flex pb-10 gap-5 border-b border-gray-300">					
+					<img alt="Foto: (TV Globo)" src="https://s2-g1.glbimg.com/oESO-KWpfLHXMLqAHhnHpY6pk9I=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/t/1/Hj3yQvTlC7w2MjkC05Ew/gnews-gn03-lula-sindicato-20230602-1437-frame-69739.jpeg" class="w-1/2 h-full rounded-lg">	
+					<div class="flex flex-col gap-3">
+						<h5>Articulação do governo</h5>
+						<a href="">
+							<h2 class="text-red-800 hover:text-red-800">'Aqui não tem marinheiro de 1ª viagem', diz Padilha após críticas</h2>
+						</a>									
+						<ul>
+							<li class="text-md">
+								<a href="">VALDO: ministro diz que governo não fará 'lacração'</a>
+							</li>
+						</ul>										
+						<p class="text-sm">Há 51 minutos -- Em São Paulo</p>
+					</div>
+				</div>		
+				<div class="flex pb-10 gap-5 border-b border-gray-300">					
+					<img alt="Foto: (TV Globo)" src="https://s2-g1.glbimg.com/oESO-KWpfLHXMLqAHhnHpY6pk9I=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/t/1/Hj3yQvTlC7w2MjkC05Ew/gnews-gn03-lula-sindicato-20230602-1437-frame-69739.jpeg" class="w-1/2 h-full rounded-lg">	
+					<div class="flex flex-col gap-3">
+						<h5>Articulação do governo</h5>
+						<a href="">
+							<h2 class="text-red-800 hover:text-red-800">'Aqui não tem marinheiro de 1ª viagem', diz Padilha após críticas</h2>
+						</a>									
+						<ul>
+							<li class="text-md">
+								<a href="">VALDO: ministro diz que governo não fará 'lacração'</a>
+							</li>
+						</ul>										
+						<p class="text-sm">Há 51 minutos -- Em São Paulo</p>
+					</div>
+				</div>		
+				<div class="flex pb-10 gap-5 border-b border-gray-300">					
+					<img alt="Foto: (TV Globo)" src="https://s2-g1.glbimg.com/oESO-KWpfLHXMLqAHhnHpY6pk9I=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/t/1/Hj3yQvTlC7w2MjkC05Ew/gnews-gn03-lula-sindicato-20230602-1437-frame-69739.jpeg" class="w-1/2 h-full rounded-lg">	
+					<div class="flex flex-col gap-3">
+						<h5>Articulação do governo</h5>
+						<a href="">
+							<h2 class="text-red-800 hover:text-red-800">'Aqui não tem marinheiro de 1ª viagem', diz Padilha após críticas</h2>
+						</a>									
+						<ul>
+							<li class="text-md">
+								<a href="">VALDO: ministro diz que governo não fará 'lacração'</a>
+							</li>
+						</ul>										
+						<p class="text-sm">Há 51 minutos -- Em São Paulo</p>
+					</div>
+				</div>		
+				<div class="flex pb-10 gap-5 border-b border-gray-300">					
+					<img alt="Foto: (TV Globo)" src="https://s2-g1.glbimg.com/oESO-KWpfLHXMLqAHhnHpY6pk9I=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/t/1/Hj3yQvTlC7w2MjkC05Ew/gnews-gn03-lula-sindicato-20230602-1437-frame-69739.jpeg" class="w-1/2 h-full rounded-lg">	
+					<div class="flex flex-col gap-3">
+						<h5>Articulação do governo</h5>
+						<a href="">
+							<h2 class="text-red-800 hover:text-red-800">'Aqui não tem marinheiro de 1ª viagem', diz Padilha após críticas</h2>
+						</a>									
+						<ul>
+							<li class="text-md">
+								<a href="">VALDO: ministro diz que governo não fará 'lacração'</a>
+							</li>
+						</ul>										
+						<p class="text-sm">Há 51 minutos -- Em São Paulo</p>
+					</div>
+				</div>	
+				<div class="flex pb-10 gap-5 border-b border-gray-300">					
+					<img alt="Foto: (TV Globo)" src="https://s2-g1.glbimg.com/oESO-KWpfLHXMLqAHhnHpY6pk9I=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/t/1/Hj3yQvTlC7w2MjkC05Ew/gnews-gn03-lula-sindicato-20230602-1437-frame-69739.jpeg" class="w-1/2 h-full rounded-lg">	
+					<div class="flex flex-col gap-3">
+						<h5>Articulação do governo</h5>
+						<a href="">
+							<h2 class="text-red-800 hover:text-red-800">'Aqui não tem marinheiro de 1ª viagem', diz Padilha após críticas</h2>
+						</a>									
+						<ul>
+							<li class="text-md">
+								<a href="">VALDO: ministro diz que governo não fará 'lacração'</a>
+							</li>
+						</ul>										
+						<p class="text-sm">Há 51 minutos -- Em São Paulo</p>
+					</div>
+				</div>		
+				<div class="flex pb-10 gap-5 border-b border-gray-300">					
+					<img alt="Foto: (TV Globo)" src="https://s2-g1.glbimg.com/oESO-KWpfLHXMLqAHhnHpY6pk9I=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/t/1/Hj3yQvTlC7w2MjkC05Ew/gnews-gn03-lula-sindicato-20230602-1437-frame-69739.jpeg" class="w-1/2 h-full rounded-lg">	
+					<div class="flex flex-col gap-3">
+						<h5>Articulação do governo</h5>
+						<a href="">
+							<h2 class="text-red-800 hover:text-red-800">'Aqui não tem marinheiro de 1ª viagem', diz Padilha após críticas</h2>
+						</a>									
+						<ul>
+							<li class="text-md">
+								<a href="">VALDO: ministro diz que governo não fará 'lacração'</a>
+							</li>
+						</ul>										
+						<p class="text-sm">Há 51 minutos -- Em São Paulo</p>
+					</div>
+				</div>	
+			</div>
+			
 			<!-- Coluna 2 -->
-			<div>
-
+			<div class="grow-0">
+				<!-- Coluna 2, Linha 1: Viu isso aqui? -->
+				<div class="right-side-box">
+					<h5 class="px-5 py-3 border-b">Viu isso aqui?</h5>
+					<ul class="mx-5 font-bold text-red-700">
+						<li class="leading-tight flex py-5 border-b">
+							<a href="" class="mr-10 mt-3">Menina de 3 anos é resgatada desnutrida e pai é preso; homem diz que não a alimentava há 40 dias</a>							
+							<img class="rounded-lg w-24 h-24" src="https://s2-g1.glbimg.com/V4-Yt9Nsfk8AvuWnNJUDkZr0YTw=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/q/R/a26DoFQp27QemNxwKelA/bdrj-prisao1.jpeg">																				
+						</li>
+						<li class="leading-tight flex py-5 border-b">
+							<a href="" class="mr-10 mt-3">Menina de 3 anos é resgatada desnutrida e pai é preso; homem diz que não a alimentava há 40 dias</a>							
+							<img class="rounded-lg w-24 h-24" src="https://s2-g1.glbimg.com/V4-Yt9Nsfk8AvuWnNJUDkZr0YTw=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/q/R/a26DoFQp27QemNxwKelA/bdrj-prisao1.jpeg">																				
+						</li>
+						<li class="leading-tight flex py-5">
+							<a href="" class="mr-10 mt-3">Menina de 3 anos é resgatada desnutrida e pai é preso; homem diz que não a alimentava há 40 dias</a>							
+							<img class="rounded-lg w-24 h-24" src="https://s2-g1.glbimg.com/V4-Yt9Nsfk8AvuWnNJUDkZr0YTw=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/q/R/a26DoFQp27QemNxwKelA/bdrj-prisao1.jpeg">																				
+						</li>
+					</ul>	
+					<div class="px-5 py-3 border-t text-sm">
+						<a class="text-red-700 font-semibold text-sm" href="">
+							Mais conteúdos recomendados
+						</a>
+					</div>
+				</div>
+				<!-- Coluna 2, Linha 2: Previsão do Tempo -->
+				<div class="right-side-box">
+					<h5 class="px-5 py-3 border-b">Previsão do Tempo</h5>
+					<div class="p-5">
+						<h6>Salvador</h6>
+						<p class="">Probabilidade de chuva: 39% 9mm</p>
+						<ul class="flex justify-between">
+							<li>
+								<img>
+								<span>Manhã</span>
+							</li>
+							<li>
+								<img>
+								<span>Tarde</span>
+							</li>						
+							<li>
+								<img>
+								<span>Noite</span>
+							</li>
+							<li class="inline">
+								<span>28° máx.</span>
+								<span>24° min.</span>
+							</li>							
+						</ul>
+					</div>					
+					<div class="px-5 py-3 border-t text-sm">
+						<a class="text-red-700 font-semibold text-sm" href="">
+							Veja a previsão do Climatempo
+						</a>
+					</div>										
+				</div>
+				<!-- Coluna 2, Linha 3: Mais Lidas -->
+				<div class="right-side-box">
+					<h5 class="px-5 py-3 border-b">Mais Lidas</h5>
+					<ul class="m-5 leading-none">
+						<li class="border-b flex py-5 gap-5 items-center">
+							<span class="text-gray-400">1</span>
+							<span><a class="text-red-700 font-bold" href="#">Vídeo mostra marido dirigindo carro com mulher na mesma posição em que ela foi encontrada morta em Colombo, diz delegado</a></span>				
+						</li>
+						<li class="border-b flex py-5 gap-5 items-center">
+							<span class="text-gray-400">2</span>
+							<span><a class="text-red-700 font-bold" href="#">Turista é condenado por tocar em filhote de bisão nos EUA; animal morreu após ser rejeitado pela manada</a></span>
+						</li>
+						<li class="border-b flex py-5 gap-5 items-center">
+							<span class="text-gray-400">3</span>
+							<span><a class="text-red-700 font-bold" href="#">Homem some ao saber que seria pai de trigêmeos em MS: 'foi trabalhar e nunca voltou', diz mãe</a></span>
+						</li>
+						<li class="border-b flex py-5 gap-5 items-center">
+							<span class="text-gray-400">4</span>
+							<span><a class="text-red-700 font-bold" href="#">Camila Loures é condenada a pagar R$ 25 mil por danos morais a motorista de aplicativo; 'valor é desproporcional', diz defesa</a></span>
+						</li>
+						<li class="flex py-5 gap-5 items-center">
+							<span class="text-gray-400">5</span>
+							<span><a class="text-red-700 font-bold" href="#">'Aqui não tem marinheiro de primeira viagem', diz Padilha sobre críticas à articulação política</a></span>
+						</li>
+					</ul>
+				</div>
+				<!-- Coluna 2, Linha 4: Deu o que falar... -->	
+				<div class="right-side-box">
+					<h5 class="px-5 py-3 border-b">Deu o que falar...</h5>
+					<ul class="mx-5 font-bold text-red-700">
+						<li class="leading-tight flex py-5 border-b">
+							<span>
+								Empresário tetraplégico que inspirou o filme 'Intocáveis' morre
+							</span>
+							<img class="w-20 h-20" alt="Foto: (Filme Intocáveis / Divulgação)" src="https://s2-g1.glbimg.com/1xQY9BHkCn1mv0TkvrxmvMjNApE=/0x0:620x465/984x0/smart/filters:strip_icc()/s.glbimg.com/jo/g1/f/original/2017/06/22/intocaveis.jpg">
+						</li>
+						<li class="leading-tight flex py-5 border-b">
+							<span>
+								Por que o avião de passageiros mais rápido do mundo fracassou
+							</span>
+							<img class="w-20 h-20" alt="Foto: (Tupolev Tu-144, apelidado de 'Concordski', com as bandeiras da Rússia e dos EUA pintadas na cauda, é exibido em aeroporto em Moscou, em 17 de março de 1996 / AP/Arquivo)" src="https://s2-g1.glbimg.com/_tyEg8XOU31govEp6er1gM7ehs8=/0x0:2000x1264/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/n/c/NCdwfCTTmbUxdse09Bow/ap96031802796.jpg">
+						</li>
+						<li class="leading-tight flex py-5">
+							<span>
+								Semana de 4 dias: o que dizem os brasileiros que adotaram o modelo
+							</span>
+							<img class="w-20 h-20" alt="Foto: (Gustavo, Julia e Rodrigo, da NovaHaus / Divulgação)" src="https://s2-g1.glbimg.com/oOpMXKPrk_UbYQbFsTa-xxvWxqE=/0x0:2048x1536/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/f/l/iOTXBrSxW9lwxj0Nohlw/equipe-novahaus-2.jpg">
+						</li>
+					</ul>
+					<div class="px-5 py-3 border-t text-sm">
+						<a class="text-red-700 font-semibold text-sm" href="">
+							Mais Deu o que falar...
+						</a>
+					</div>
+				</div>
+				<!-- Coluna 2, Linha 5: G1 Explica -->
+				<div class="right-side-box">
+					<h5 class="px-5 py-3 border-b">G1 Explica</h5>
+					<ul class="mx-5 font-bold text-red-700">
+						<li class="leading-tight flex py-5 border-b">
+							<span>
+								Maio foi mais frio agora do que em 2022? O 'La Niña' explica
+							</span>
+							<img alt="Foto: (Comparativo das anomalias das temperaturas mínimas de maio de 2020 e maio de 2023 no território brasileiro. / Inmet/Divulgação)" src="https://s2-g1.glbimg.com/hYtCnwqBUqrRt8FInk9_bVO3cU4=/0x0:1540x831/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/w/J/0C9ZcKS2KAbDUzNdgQpw/anomalias-maio.jpg"
+								class="w-20 h-20">
+						</li>
+						<li class="leading-tight flex py-5 border-b">
+							<span>
+								Modelo morre após aplicar silicone industrial e PMMA; entenda riscos
+							</span>
+							<img alt="Foto: (Lygia Fazio, modelo e jornalista, morre aos 40 anos, após sofrer AVC / Reprodução/Instagram)" src="https://s2-g1.glbimg.com/v82ZN5jUtfiwJQoWuIs7D5SmMRA=/0x0:1056x589/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2018/7/5/KpsITMSvisLaTAnZpwBQ/silicone-vedacao.jpg"	class="w-20 h-20">
+						</li>
+						<li class="leading-tight flex py-5 border-b">
+							<span>
+								O que é um parto humanizado e quais os direitos da grávida?
+							</span>
+							<img alt="Foto: (Lygia Fazio, modelo e jornalista, morre aos 40 anos, após sofrer AVC / Reprodução/Instagram)" src="https://s2-g1.glbimg.com/v82ZN5jUtfiwJQoWuIs7D5SmMRA=/0x0:1056x589/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2018/7/5/KpsITMSvisLaTAnZpwBQ/silicone-vedacao.jpg" class="w-20 h-20">
+						</li>
+					</ul>
+					<div class="px-5 py-3 border-t text-sm">
+						<a class="text-red-700 font-semibold text-sm" href="">
+							Mais g1 explica
+						</a>
+					</div>
+				</div>
+				<!-- Coluna 2, Linha 6: Seus favoritos -->
+				<div class="right-side-box">
+					<h5 class="px-5 py-3 border-b">Seus favoritos</h5>
+					<div class="p-5 flex flex-col gap-5">
+						<p>
+							Escolha quais assuntos você quer ver e clique no botão para abrir as últimas notícias.
+						</p>
+						<ul class="flex flex-wrap font-xs gap-2">							
+							<li class="badge">fato ou fake</li>
+							<li class="badge">podcast</li>
+							<li class="badge">política</li>
+							<li class="badge">economia</li>
+							<li class="badge">tecnologia</li>	
+							<li class="badge">saúde</li>
+							<li class="badge">música</li>
+							<li class="badge">concursos</li>						
+							<li class="badge">cinema</li>						
+						</ul>	
+						<button class="bg-red-700 text-white rounded-sm p-3 w-full">Seguir Assuntos</button>
+					</div>
+					
+					
+				</div>
+				<!-- Coluna 2, Linha 7: Blogs e Colunas -->
+				<div class="right-side-box">
+					<h5 class="px-5 py-3 border-b">Blogs e Colunas</h5>
+					<ul>
+						<li class="flex flex-row-reverse border-b p-5">							
+							<img alt="Foto: (Mauro Ferreira / Editoria de Arte /G1)" class="rounded-full" src="https://s2.glbimg.com/FSvr2U026FLbfI4I2GkCSovuZ9A=/12x0:219x207/94x94/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/l/P/mJLQzQSuOv0mlKwpD3ZQ/mauro.jpg">
+							<div>
+								<h5>Mauro Ferreira</h5>
+								<p>Teresa Cristina energiza público carioca na estreia de 'Pagode, Preta'</p>
+							</div>														
+						</li>
+						<li class="flex flex-row-reverse border-b p-5">							
+							<img alt="Foto: (Mauro Ferreira / Editoria de Arte /G1)" class="rounded-full" src="https://s2.glbimg.com/FSvr2U026FLbfI4I2GkCSovuZ9A=/12x0:219x207/94x94/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/l/P/mJLQzQSuOv0mlKwpD3ZQ/mauro.jpg">
+							<div>
+								<h5>Mauro Ferreira</h5>
+								<p>Teresa Cristina energiza público carioca na estreia de 'Pagode, Preta'</p>
+							</div>														
+						</li>
+						<li class="flex flex-row-reverse border-b p-5">							
+							<img alt="Foto: (Mauro Ferreira / Editoria de Arte /G1)" class="rounded-full" src="https://s2.glbimg.com/FSvr2U026FLbfI4I2GkCSovuZ9A=/12x0:219x207/94x94/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/l/P/mJLQzQSuOv0mlKwpD3ZQ/mauro.jpg">
+							<div>
+								<h5>Mauro Ferreira</h5>
+								<p>Teresa Cristina energiza público carioca na estreia de 'Pagode, Preta'</p>
+							</div>														
+						</li>
+					</ul>
+					<div class="py-3 px-5">
+						<a href="" class="text-red-700">Tudo sobre Blogs e colunas</a>
+					</div>					
+				</div>
+				<!-- Coluna 2, Linha 8: Fato ou Fake -->
+				<div class="right-side-box">
+					<h5 class="px-5 py-3 border-b">Fato ou Fake</h5>
+					<ul class="font-semibold mx-5">
+						<li class="border-b py-3">														
+							<a class="text-red-700" href="">É #FAKE que vacina contra a gripe cause câncer</a>
+						</li>
+						<li class="border-b py-3">							
+							<a class="text-red-700" href="">É #FAKE que ONU tivesse plano para forçar crianças a ter parceiros sexuais</a>
+						</li>
+						<li class="py-3">														
+							<a class="text-red-700" href="">É #FAKE que decisão do STJ autoriza invasão de domicílio</a>	
+						</li>
+					</ul>									
+				</div>
 			</div>
 		</div>
 	</main>
-	<footer>
-
+	<footer class="flex flex-col bg-red-700 w-full text-white text-xs p-5 gap-7">
+		<div class="flex flex-row items-center gap-5">
+			<h1 class="">g1</h1>
+			<p class="font-semibold">Últimas notícias</p>			
+		</div>		
+		<div class="flex justify-between">			
+			<span>© Copyright 2000-2023 Globo Comunicação e Participações S.A.</span>
+			<ul class="inline-flex lowercase">
+				<li class="border-r pr-3"><a href="">Princípios editoriais</a></li>
+				<li class="border-r px-3"><a href="">Política de privacidade</a></li>
+				<li class="border-r px-3"><a href="">Minha conta</a></li>
+				<li class="px-3"><a href="">Anuncie conosco</a></li>
+			</ul>			
+		</div>
 	</footer>
+	</main>
 </body>	
 </html>

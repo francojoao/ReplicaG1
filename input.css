@@ -1,3 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	h1, h2, h3, h4, h5, h6 {
+		@apply font-bold;
+	} 
+	
+	h1 {
+		@apply text-4xl;
+	}
+
+	h2 {
+		@apply text-2xl;
+	}
+
+	h3 {
+		@apply text-xl;
+	}
+
+	h4 {
+		@apply text-lg;
+	}	
+
+	h5 {
+		/* @apply text-md; */
+	}
+
+	h6 {
+		@apply text-sm;
+	}
+}
+
+@layer components {
+	.right-side-box {
+		@apply bg-white mb-5 rounded-lg drop-shadow-sm border;
+	}
+
+	.badge {
+		@apply border border-gray-300 text-red-700 px-3 py-1 rounded-full;
+	}
+
+	.badge:hover {
+		@apply border-red-800 text-red-800;
+	}
+}
